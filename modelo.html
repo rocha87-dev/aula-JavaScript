@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Fernando Rocha"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div> <!--formulario de entrada-->
+
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc"><b>Masculino</b></label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem"><b>Feminino</b></label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res"> <!--resultado-->
+
+        </div>
+    </section>
+    <footer>
+        <p> &copy; 2023 <a href="https://github.com/rocha87-dev" target="_blank"> Fernando Dev </a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
